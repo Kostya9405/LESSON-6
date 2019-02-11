@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <input type="text" placeholder="Назание" id="name">
+    <button  id="button2">ДОБАВИТЬ </button>
+</form>
+<ol id="list">
+
+</ol>
+<script>
+ button2.onclick = function(event) {
+  event.preventDefault();
+  var x=document.getElementById('name').value;
+  console.log(x);
+  var newLi = document.createElement('li');
+  var dele= document.createElement('input');
+
+  newLi.innerHTML = x ;
+
+  list.appendChild(newLi,dele);
+
+};
+</script>
+
+</body>
+</html>
